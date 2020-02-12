@@ -11,7 +11,7 @@ abcserials = [1,2,3]
 serlist = abcserials # Define the list of participants to be used in the loop
 
 # Specify sources
-datasource = pd.read_csv(r'XXXX\{}_gasuseprepared.csv'.format(str(x), low_memory = False, keep_default_na=False)) # Replace XXXX with file path and replace '_gasuseprepared.csv' with filename. This is a pre-prepared csv in the format of 
+datasource = pd.read_csv(r'XXXX\{}_gasuseprepared.csv'.format(str(x), low_memory = False, keep_default_na=False)) # Replace XXXX with file path and replace '_gasuseprepared.csv' with filename. This is a pre-prepared csv in the format specified in 'linearregression_sampleimportcsv.csv'
 datasavelocation = (r'XXXX\{}_gasuseprepared_wConditions.csv'.format(str(x))) # Location to which a new csv will be saved following stacking of dataset and adding condition labels based on columns
 graphsavelocation = (r'XXXX\{}_gas_lr_graph.csv'.format(str(x))) # This is where each linear regression graph will be saved.
 
